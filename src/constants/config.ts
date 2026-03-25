@@ -40,14 +40,18 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Mohit Kumar | MERN Stack Developer",
+    fullName: "Mohit Kumar",
+ email: "mohit82352@gmail.com",
   },
-  hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
-  },
+ hero: {
+  name: "Mohit Kumar",
+  p: [
+    "Aspiring MERN Stack Developer",
+    "Building full-stack web apps with React, Node.js & MongoDB",
+  ],
+},
+
   contact: {
     p: "Get in touch",
     h2: "Contact.",
@@ -65,30 +69,28 @@ export const config: TConfig = {
   },
   sections: {
     about: {
-      p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
-    },
+  p: "Introduction",
+  h2: "Overview.",
+  content: `I'm a passionate MERN Stack Developer skilled in MongoDB, Express.js, React.js, and Node.js.
+I build responsive web applications and REST APIs, and I am continuously learning and improving my development skills.`,
+},
     experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
-    },
+  p: "My journey",
+  h2: "Learning & Projects",
+},
     feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
-    },
-    works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
-    },
+    p: "What people say",
+    h2: "Testimonials",
   },
+
+   works: {
+    p: "My projects",
+    h2: "Projects",
+    content: `These projects showcase my skills as a MERN Stack Developer through real-world applications.
+
+I have developed full-stack web applications using MongoDB, Express.js, React.js, and Node.js, including features like authentication, CRUD operations, and API integration.
+
+Each project reflects my ability to solve problems, build scalable solutions, and create responsive, user-friendly interfaces.`,
+  },
+},
 };

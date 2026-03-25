@@ -5,7 +5,6 @@ import { fadeIn } from "../../utils/motion";
 import { testimonials } from "../../constants";
 import { Header } from "../atoms/Header";
 import { TTestimonial } from "../../types";
-import { config } from "../../constants/config";
 
 const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   index,
@@ -16,27 +15,30 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   image,
 }) => (
   <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-10"
+    variants={fadeIn("", "spring", index * 0.3, 0.75)}
+    className="bg-black-200 w-full rounded-2xl p-6 hover:scale-105 transition"
   >
-    <p className="text-[48px] font-black text-white">"</p>
+    {/* ICON */}
+    <p className="text-[30px] font-bold text-white">🚀</p>
 
-    <div className="mt-1">
-      <p className="text-[18px] tracking-wider text-white">{testimonial}</p>
+    <div className="mt-2">
+      {/* DESCRIPTION */}
+      <p className="text-[16px] tracking-wide text-white">{testimonial}</p>
 
-      <div className="mt-7 flex items-center justify-between gap-1">
-        <div className="flex flex-1 flex-col">
-          <p className="text-[16px] font-medium text-white">
-            <span className="blue-text-gradient">@</span> {name}
+      {/* FOOTER */}
+      <div className="mt-5 flex items-center justify-between">
+        <div>
+          <p className="text-[15px] font-semibold text-white">
+            {name}
           </p>
-          <p className="text-secondary mt-1 text-[12px]">
-            {designation} of {company}
+          <p className="text-secondary text-[12px]">
+            {designation} • {company}
           </p>
         </div>
 
         <img
           src={image}
-          alt={`feedback_by-${name}`}
+          alt={name}
           className="h-10 w-10 rounded-full object-cover"
         />
       </div>
@@ -46,14 +48,19 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
 
 const Feedbacks = () => {
   return (
-    <div className="bg-black-100 mt-12 rounded-[20px]">
-      <div
-        className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
-      >
-        <Header useMotion={true} {...config.sections.feedbacks} />
+    <div className="bg-black-100 mt-16 rounded-[20px]">
+      {/* HEADER */}
+      <div className={`${styles.padding} bg-tertiary rounded-2xl`}>
+        <Header
+          useMotion={true}
+          h2="Project Highlights"
+          p="MY WORK"
+        />
       </div>
+
+      {/* CARDS */}
       <div
-        className={`${styles.paddingX} -mt-20 flex flex-wrap gap-7 pb-14 max-sm:justify-center`}
+        className={`${styles.paddingX} -mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-14`}
       >
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />

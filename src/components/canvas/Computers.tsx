@@ -17,6 +17,7 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
         intensity={1}
         castShadow
         shadow-mapSize={1024}
+        
       />
       <pointLight intensity={1} />
       <primitive
@@ -66,12 +67,14 @@ const ComputersCanvas = () => {
           gl={{ preserveDrawingBuffer: true }}
         >
           <Suspense fallback={<CanvasLoader />}>
-            <OrbitControls
-              enablePan={false}
-              enableZoom={false}
-              maxPolarAngle={Math.PI / 2}
-              minPolarAngle={Math.PI / 2}
-            />
+          <OrbitControls
+  enablePan={false}
+  enableZoom={false}
+  maxPolarAngle={Math.PI / 2}
+  minPolarAngle={Math.PI / 2}
+  autoRotate
+  autoRotateSpeed={1}
+/>
             <Computers isMobile={isMobile} />
           </Suspense>
           <Preload all />

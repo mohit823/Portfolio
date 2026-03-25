@@ -118,4 +118,7 @@ const Navbar = () => {
   );
 };
 
+<p className="text-white">MOHIT WORKING</p>
+
 export default Navbar;
+

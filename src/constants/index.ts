@@ -24,10 +24,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -51,19 +47,20 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer (React.js)",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer (Node.js, Express)",
+    icon: backend,
+
+  },
+  {
+    title: "Database Developer (MongoDB)",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
+    title: "Full Stack MERN Developer",
     icon: creator,
   },
 ];
@@ -125,55 +122,53 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "MERN Stack Developer",
+    companyName: "Personal Projects",
+    icon: reactjs,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built full-stack applications using MongoDB, Express.js, React, and Node.js",
+      "Developed REST APIs and connected frontend with backend",
+      "Implemented authentication using JWT",
+      "Created responsive UI using Tailwind CSS",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+    title: "Task Manager App",
+    companyName: "Project",
+    icon: javascript,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created CRUD-based task manager using HTML, CSS, JavaScript",
+      "Added task creation, deletion, and update features",
+      "Deployed project using GitHub Pages",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
+    title: "React Todo App",
+    companyName: "Project",
+    icon: reactjs,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built dynamic Todo app using React.js",
+      "Managed state using hooks",
+      "Designed responsive UI with CSS",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Birthday Wish App",
+    companyName: "Personal Project",
+    icon: javascript,
+    iconBg: "#383E56",
+    date: "2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built interactive birthday wish app using HTML, CSS, JavaScript",
+      "Added animations and user-friendly UI",
+      "Created personalized birthday messages",
+      "Deployed project online",
     ],
   },
 ];
@@ -181,84 +176,64 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Built a Task Manager App with full CRUD functionality and responsive UI.",
+    name: "Task Manager App",
+    designation: "Project",
+    company: "Personal",
+    image: "https://via.placeholder.com/150",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Developed a React Todo App using hooks and component-based architecture.",
+    name: "React Todo App",
+    designation: "Project",
+    company: "Personal",
+    image: "https://via.placeholder.com/150",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Created a Birthday Wish App with animations and interactive UI.",
+    name: "Birthday Wish App",
+    designation: "Project",
+    company: "Personal",
+    image: "https://via.placeholder.com/150",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Task Manager App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-stack task manager application with CRUD functionality, allowing users to create, update, and delete tasks. ",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "html",
+        color: "blue-text-gradient"
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "css",
+        color: "green-text-gradient"
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "javascript",
+        color: "pink-text-gradient"
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://mohit823.github.io/Todo-App/",
   },
+
   {
-    name: "Job IT",
+    name: "React Todo App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A simple and responsive Todo List application built using React.js that allows users to add, delete, and manage daily tasks efficiently with real-time updates.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -266,8 +241,29 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: jobit, // make sure you change this to your actual todo image and import it from ../assets
+    sourceCodeLink: "https://react-task-manager-mk.netlify.app/", // apna repo link daalna
+  },
+  {
+    name: "Birthday Wish App",
+    description:
+      "A simple and interactive birthday wish web app built using HTML, CSS, and JavaScript, featuring animations and personalized messages for users.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide, // (optional: baad me change kar sakte ho)
+    sourceCodeLink: "https://69c25ce15f3f7824446e6f9a--willowy-basbousa-ee7b38.netlify.app",
   },
 ];
 
