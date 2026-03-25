@@ -7,7 +7,7 @@ This project showcases my skills, projects, and experience as a MERN Stack Devel
 
 ## 🌐 Live Demo
 
-👉 **[View Live Portfolio](https://your-demo-link.vercel.app)**
+👉 **[View Live Portfolio]([https://your-demo-link.vercel.app](https://portfolio-beta-cyan-x50opzvqi1.vercel.app/)**
 
 > 🔁 Replace this link with your actual deployed URL (Vercel/Netlify)
 
