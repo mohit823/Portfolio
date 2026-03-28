@@ -13,8 +13,8 @@ interface IHeader {
 export const Header: React.FC<IHeader> = ({ useMotion, p, h2 }) => {
   const Content = () => (
     <>
-      <p className={styles.sectionSubText}>{p}</p>
-      <h2 className={styles.sectionHeadText}>{h2}</h2>
+      <p className={`${styles.sectionSubText} text-[#00f0ff]`}>{p}</p>
+      <h2 className={`${styles.sectionHeadText} text-white`}>{h2}</h2>
     </>
   );
 
