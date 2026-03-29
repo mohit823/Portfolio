@@ -47,7 +47,7 @@ export const config: TConfig = {
  hero: {
   name: "Mohit Kumar",
   p: [
-    "Aspiring MERN Stack Developer",
+    "MERN Stack Developer",
     "Building full-stack web apps with React, Node.js & MongoDB",
   ],
 },
